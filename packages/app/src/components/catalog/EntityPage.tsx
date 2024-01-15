@@ -57,6 +57,7 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { MtaPage } from '@internal/plugin-mta';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -161,6 +162,14 @@ const serviceEntityPage = (
       </Grid>
     </EntityLayout.Route>
 
+    <EntityLayout.Route path="/mta" title="Mta">
+      <Grid container spacing={3} alignItems="stretch">
+          <Grid item md={6}>
+              <MtaPage />
+          </Grid>
+      </Grid>
+    </EntityLayout.Route>
+
     <EntityLayout.Route path="/dependencies" title="Dependencies">
       <Grid container spacing={3} alignItems="stretch">
         <Grid item md={6}>
@@ -198,6 +207,14 @@ const websiteEntityPage = (
         </Grid>
       </Grid>
     </EntityLayout.Route>
+
+      <EntityLayout.Route path="/mta" title="Mta">
+          <Grid container spacing={3} alignItems="stretch">
+              <Grid item md={6}>
+                  <MtaPage />
+              </Grid>
+          </Grid>
+      </EntityLayout.Route>
 
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
