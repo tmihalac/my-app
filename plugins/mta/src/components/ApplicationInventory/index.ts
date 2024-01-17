@@ -1,1 +1,0 @@
-export { ApplicationInventory } from './ApplicationInventory';

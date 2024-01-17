@@ -7,14 +7,12 @@ import { Button, Grid } from '@material-ui/core';
 import {
   useApplications,
   useRunAnalysis,
-  useTaskGroups,
   useTasks,
 } from '../../hooks';
 import { Application } from '../../types';
 import {
   applicationColumns,
   taskColumns,
-  taskGroupColumns,
   useStyles,
 } from './tableHeading';
 
